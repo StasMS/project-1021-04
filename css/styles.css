@@ -133,20 +133,25 @@ Roboto
   background-repeat: no-repeat;
   background-size: contain;
 } */
-.item > .icon-envelope:hover {
+/*.item > .icon-envelope:hover {
   color: var(--accent-text-color);
-}
+}*/
 
-.link.contact-icons::before {
+/*.link.contact-icons::before {
   content: '';
   display: inline-block;
   margin-right: 10px;
-  /*background-position: center;*/
   background-repeat: no-repeat;
   background-size: contain;
-}
+}*/
 
 /* ИКОНКИ КОНТАКТОВ */
+.icon-smartphone,
+.icon-envelope {
+  padding: 0;
+  margin-right: 5px;
+}
+
 /* .item.icon-envelope::before {
   width: 16px;
   background-image: url(../images/envelope.png);
@@ -157,11 +162,11 @@ Roboto
   background-image: url(../images/smartphone.png);
 } */
 
-.contact-icons.icon-envelope::before {
+/*.contact-icons.icon-envelope::before {
   width: 16px;
   height: 12px;
   background-image: url(../images/envelope.png);
-}
+}*/
 
 .site-nav,
 .contact-nav {
@@ -194,6 +199,11 @@ Roboto
   text-decoration: none;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.item .contact-icons {
+  display: flex;
+  align-items: center;
 }
 
 /* Hero section */
@@ -433,6 +443,11 @@ Roboto
   /*background-color: #757575;*/
 }
 
+.actions {
+  padding: 0;
+  margin: 0;
+  /*outline: 1px solid black;*/
+}
 .list .link {
   text-decoration: none;
 }
@@ -451,12 +466,6 @@ Roboto
   margin-top: 0;
   margin-bottom: 30px;
   border: 0;
-}
-
-.actions {
-  padding: 0;
-  margin: 0;
-  /*outline: 1px solid black;*/
 }
 
 .social-links-item > .link {
